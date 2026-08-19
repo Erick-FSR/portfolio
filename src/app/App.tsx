@@ -848,7 +848,7 @@ function ContatoTab() {
       <div className="flex gap-3 mt-6">
         {[
           { icon: Github, label: "GitHub", href: "https://github.com/Erick-FSR" },
-          { icon: Linkedin, label: "LinkedIn", href: "https://www.linkedin.com/in/erick-fsr" },
+          { icon: Linkedin, label: "LinkedIn", href: "www.linkedin.com/in/erickrodrigues06" },
         ].map((s) => (
           <a
             key={s.label}
