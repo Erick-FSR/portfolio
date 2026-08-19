@@ -814,10 +814,13 @@ function FormacoesTab() {
 }
 
 // ── CONTATO TAB ───────────────────────────────────────────────────
+// ── CONTATO TAB ───────────────────────────────────────────────────
 function ContatoTab() {
   return (
     <div className="max-w-xl mx-auto px-6 py-12">
       <SectionHeader codename="TRANSMISSÃO" title="Contato" />
+      
+      {/* Lista de informações de contato */}
       <div className="space-y-3 mt-10">
         {[
           { icon: Mail, label: "EMAIL", val: "erick.f.rodrigues0@gmail.com" },
@@ -845,10 +848,34 @@ function ContatoTab() {
         ))}
       </div>
 
+      {/* NOVO CARD: Botão interativo para enviar E-mail */}
+      <a
+        href="mailto:erick.f.rodrigues0@gmail.com?subject=Contato%20via%20Portfolio%20Nexus"
+        className="mt-6 flex items-center justify-between p-4 btn-clip transition-all duration-200 group cursor-pointer fade-up"
+        style={{
+          background: "#FF4655",
+          textDecoration: "none",
+          color: "#FFFFFF",
+          border: "none",
+          animationDelay: "0.2s"
+        }}
+        onMouseEnter={(e) => (e.currentTarget.style.background = "#e03040")}
+        onMouseLeave={(e) => (e.currentTarget.style.background = "#FF4655")}
+      >
+        <div className="flex items-center gap-3">
+          <Terminal className="w-5 h-5" />
+          <span className="font-display font-bold tracking-[0.15em] text-sm md:text-base">
+            INICIAR PROTOCOLO DE E-MAIL
+          </span>
+        </div>
+        <ArrowRight className="w-5 h-5 group-hover:translate-x-1 transition-transform" />
+      </a>
+
+      {/* Redes Sociais */}
       <div className="flex gap-3 mt-6">
         {[
           { icon: Github, label: "GitHub", href: "https://github.com/Erick-FSR" },
-          { icon: Linkedin, label: "LinkedIn", href: "www.linkedin.com/in/erickrodrigues06" },
+          { icon: Linkedin, label: "LinkedIn", href: "https://www.linkedin.com/in/erickrodrigues06" },
         ].map((s) => (
           <a
             key={s.label}
@@ -863,12 +890,12 @@ function ContatoTab() {
               textDecoration: "none",
             }}
             onMouseEnter={(e) => {
-              (e.currentTarget as HTMLAnchorElement).style.color = "#FF4655";
-              (e.currentTarget as HTMLAnchorElement).style.borderColor = "rgba(255,70,85,0.35)";
+              e.currentTarget.style.color = "#FF4655";
+              e.currentTarget.style.borderColor = "rgba(255,70,85,0.35)";
             }}
             onMouseLeave={(e) => {
-              (e.currentTarget as HTMLAnchorElement).style.color = "#6B7A8D";
-              (e.currentTarget as HTMLAnchorElement).style.borderColor = "rgba(255,255,255,0.07)";
+              e.currentTarget.style.color = "#6B7A8D";
+              e.currentTarget.style.borderColor = "rgba(255,255,255,0.07)";
             }}
           >
             <s.icon className="w-3.5 h-3.5" />
