@@ -771,44 +771,6 @@ function FormacoesTab() {
           </div>
         ))}
       </div>
-
-      <SectionHeader codename="CONQUISTAS" title="Certificações" />
-      <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4 mt-10">
-        {CERTIFICATIONS.map((cert, i) => (
-          <div
-            key={i}
-            className="card-clip-sm flex items-start gap-4 p-4 fade-up transition-all duration-200"
-            style={{
-              background: "#16222E",
-              border: "1px solid rgba(255,70,85,0.1)",
-              animationDelay: `${i * 0.07}s`,
-            }}
-            onMouseEnter={(e) => (e.currentTarget.style.borderColor = "rgba(255,70,85,0.4)")}
-            onMouseLeave={(e) => (e.currentTarget.style.borderColor = "rgba(255,70,85,0.1)")}
-          >
-            <div
-              className="w-8 h-8 flex items-center justify-center flex-shrink-0"
-              style={{ border: "1px solid rgba(255,70,85,0.28)", background: "rgba(255,70,85,0.07)" }}
-            >
-              <cert.icon className="w-4 h-4" style={{ color: "#FF4655" }} />
-            </div>
-            <div>
-              <p
-                className="font-display font-semibold text-sm mb-0.5"
-                style={{ color: "#ECE8E1", letterSpacing: "0.02em" }}
-              >
-                {cert.name}
-              </p>
-              <p className="font-mono-valo text-xs" style={{ color: "#6B7A8D" }}>
-                {cert.issuer}
-              </p>
-              <p className="font-mono-valo text-xs mt-1" style={{ color: "rgba(255,70,85,0.65)" }}>
-                {cert.year}
-              </p>
-            </div>
-          </div>
-        ))}
-      </div>
     </div>
   );
 }
