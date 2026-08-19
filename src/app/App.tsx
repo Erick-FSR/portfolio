@@ -825,7 +825,7 @@ function ContatoTab() {
         <div className="flex items-center gap-3">
           <Terminal className="w-5 h-5" />
           <span className="font-display font-bold tracking-[0.15em] text-sm md:text-base">
-            INICIAR PROTOCOLO DE E-MAIL
+            ENVIAR E-MAIL
           </span>
         </div>
         <ArrowRight className="w-5 h-5 group-hover:translate-x-1 transition-transform" />
