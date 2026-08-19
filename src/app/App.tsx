@@ -850,7 +850,7 @@ function ContatoTab() {
 
       {/* NOVO CARD: Botão interativo para enviar E-mail */}
       <a
-        href="mailto:erick.f.rodrigues0@gmail.com?subject=Contato%20via%20Portfolio%20Nexus"
+        href="https://mail.google.com/mail/?view=cm&fs=1&to=erick.f.rodrigues0@gmail.com"
         className="mt-6 flex items-center justify-between p-4 btn-clip transition-all duration-200 group cursor-pointer fade-up"
         style={{
           background: "#FF4655",
