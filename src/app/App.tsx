@@ -814,7 +814,6 @@ function FormacoesTab() {
 }
 
 // ── CONTATO TAB ───────────────────────────────────────────────────
-// ── CONTATO TAB ───────────────────────────────────────────────────
 function ContatoTab() {
   return (
     <div className="max-w-xl mx-auto px-6 py-12">
@@ -825,7 +824,6 @@ function ContatoTab() {
         {[
           { icon: Mail, label: "EMAIL", val: "erick.f.rodrigues0@gmail.com" },
           { icon: MapPin, label: "LOCALIZAÇÃO", val: "Sapucaia do Sul, RS — Brasil" },
-          { icon: Phone, label: "TELEFONE", val: "+55 (51) 99964-9946" },
         ].map((c) => (
           <div
             key={c.label}
